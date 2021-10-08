@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--This is the Login page for my project-->
+<html>
+    <!--The link that pulls the refernced functions to run on this page-->
+    <script src="NBCustom.js"></script>
+    
+    <!--My custom style sheet-->
+    <link href="Signature.css" rel="stylesheet" type="text/css" />
+    <head>
+        <!--The title that will appear on the webpage or tab-->
+        <title>UAT DSE Login</title>
+    </head>
+
+    <br>
+    <body>
+        <h1>
+            Welcome to Nathan Berwanger, AKA Jet Mardiums Page
+        </h1>
+        <br>
+        <h2>
+            Enter Credentials Below for VIP Login
+        </h2>
+        <br>
+        <!--This is where the information is shown for the login input status-->
+        <p id="loginStatus" class="loginID">Status of login...</p>
+        <br>
+        <!--This is my form where information required to login is input -->
+        <form id="credSubmit" onsubmit="return false">
+            First Name:     <input type="text" id="firstName" /> <br>
+            Last Name:      <input type="text" id="lastName" /> <br>
+            Badge Number:   <input type="number" id="numBadge" /> <br>
+            <!--This is my form type, which i set to submit. Its function (checkCreds) activates upon clicking the submit button-->
+            <input type="submit" onclick="checkCreds();" />
+        </form>
+
+        <button onclick="window.location.href='ObjectiveBoardNB.html'" style="background-color: purple;">
+            <text style="color: orange; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">Proceed to Objective Board</text></button>
+        
+    </body>
+
+</html>
